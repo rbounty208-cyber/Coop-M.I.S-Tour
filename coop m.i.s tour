@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coop M.I.S. Tour</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f6f7;
+            color: #333;
+            line-height: 1.6;
+        }
+        nav {
+            position: fixed;
+            width: 100%;
+            background: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        nav a {
+            text-decoration: none;
+            color: #0d3b66;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+        nav a:hover { color: #f4a261; }
+        header {
+            height: 100vh;
+            background: linear-gradient(rgba(13,59,102,0.7), rgba(29,120,116,0.7)),
+                        url('https://images.unsplash.com/photo-1600788907414-6c4d98e6f7a4?auto=format&fit=crop&w=1600&q=80') center/cover;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 { font-size: 52px; margin-bottom: 15px; }
+        header p { font-size: 20px; max-width: 700px; }
+        .button {
+            margin-top: 25px;
+            padding: 14px 28px;
+            background-color: #f4a261;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .button:hover { background-color: #e76f51; }
+        section {
+            padding: 100px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #0d3b66;
+            font-size: 32px;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+        .card:hover { transform: translateY(-8px); }
+        .highlight {
+            background: #e9f5f4;
+            border-left: 5px solid #1d7874;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #0d3b66;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        footer p { margin: 5px 0; }
+        @media(max-width: 768px){
+            header h1 { font-size: 36px; }
+            nav { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div><strong>Coop M.I.S. Tour</strong></div>
+    <div>
+        <a href="#chi-siamo">Chi siamo</a>
+        <a href="#servizi">Servizi</a>
+        <a href="#lavora">Lavora con noi</a>
+        <a href="#contatti">Contatti</a>
+    </div>
+</nav>
+
+<header>
+    <h1>Ogni città ha una memoria.<br> Noi le diamo voce.</h1>
+    <p>Turismo raccontato da chi ha vissuto davvero la città. Un progetto sociale che valorizza l’esperienza degli anziani e crea connessioni tra generazioni.</p>
+    <a href="#servizi" class="button">Scopri i nostri tour</a>
+</header>
+
+<section id="chi-siamo">
+    <h2>Chi siamo</h2>
+    <p>Coop M.I.S. Tour è una cooperativa sociale di Tipo A che opera a Cagliari. Il nostro obiettivo è trasformare la memoria degli anziani in un patrimonio vivo per la comunità.</p>
+    <div class="highlight">
+        <strong>Missione:</strong> Combattere la solitudine degli anziani e valorizzare la memoria storica.<br>
+        <strong>Visione:</strong> Creare una rete nazionale di turismo sociale inclusivo.
+    </div>
+</section>
+
+<section id="servizi">
+    <h2>I nostri servizi</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Tour della Memoria</h3>
+            <p>Passeggiate guidate nei quartieri storici raccontate da chi ha vissuto la città per decenni.</p>
+        </div>
+        <div class="card">
+            <h3>Percorsi Culturali</h3>
+            <p>Itinerari dedicati a tradizioni, eventi storici e trasformazioni urbane.</p>
+        </div>
+        <div class="card">
+            <h3>Progetti con le Scuole</h3>
+            <p>Incontri intergenerazionali per trasmettere memoria e cultura alle nuove generazioni.</p>
+        </div>
+    </div>
+</section>
+
+<section id="lavora">
+    <h2>Lavora con noi</h2>
+    <p>Se sei un residente senior di Cagliari e desideri condividere la tua esperienza, entra a far parte di M.I.S. Tour. La tua storia può diventare un patrimonio per tutti.</p>
+    <a href="#contatti" class="button">Candidati ora</a>
+</section>
+
+<section id="contatti">
+    <h2>Contatti</h2>
+    <p>Email: info@coopmistour.it</p>
+    <p>Telefono: 000 000 0000</p>
+</section>
+
+<footer>
+    <p>© 2026 Coop M.I.S. Tour – Cooperativa Sociale</p>
+    <p>Memoria • Inclusione • Scoperta</p>
+</footer>
+
+</body>
+</html>
